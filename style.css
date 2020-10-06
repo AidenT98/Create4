@@ -1,0 +1,177 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
+}
+.fa-times {
+z-index: 50;
+position: absolute;
+margin-top: -45%;
+margin-left: 29.5%;
+font-size: 40px;
+}
+.person {
+    background-color: white;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10%;
+}
+.person > h1, .person > h3 {
+    margin-left: 3%;
+}
+
+#secound > #first-section {
+    overflow: auto;
+    position: fixed;
+    background-color: #002C6B; 
+    width: 30%;
+    height:900px;
+    margin-left: -1%;
+    margin-top: -1.5%;
+}
+#secound > #secound-section {
+    overflow: hidden;
+    position: absolute;
+    background-color: #00B269;
+    width: 100%;
+    height:940px;
+    margin-left: 29%;
+  
+
+}
+#secound > #first-section > h1 {
+    margin-left: 5%;
+    color: white;
+}
+#first-section {
+    background-color: #002C6B; 
+    width: 102%;
+    height: 400px;
+    margin-left: -1%;
+    margin-top: -1%;
+
+
+}
+#secound-section  {
+    background-color: #00B269;
+    width: 102%;
+    height: 510px;
+    margin-left: -1%;
+    margin-top: -1%;
+
+
+}
+.close1 {
+    position: absolute; 
+    z-index: 49;
+    margin-left: 29%;
+    margin-top: -45%;
+    background-color: white; 
+    border-radius: 360px; 
+    width: 3%; 
+    height: 5%;
+}
+.close2 {
+    position: absolute; 
+    z-index: 50;
+    margin-left: 29%;
+    margin-top: -45%;
+    background-color: white; 
+    border-radius: 360px; 
+    width: 3%; 
+    height: 5%;
+}
+.close3 {
+    position: absolute; 
+    z-index: 50;
+    margin-left: 58%;
+    margin-top: -46%;
+    background-color: white; 
+    border-radius: 360px; 
+    width: 3%; 
+    height: 5%;
+}
+.close2 {
+    position: absolute; 
+    z-index: 50;
+    margin-left: 89%;
+    margin-top: -45%;
+    background-color: white; 
+    border-radius: 360px; 
+    width: 3%; 
+    height: 5%;
+}
+.note1 {
+    transform: rotate(2deg);
+    position: absolute;
+    margin-top: -45%;
+    width: 25%;
+    margin-left: 5%;
+    height: 350px;
+    background-color: #FFF398;
+  
+}
+.note1, .note2, .note3 {
+   text-align: center;
+}
+.note2 {
+    transform: rotate(-2deg);
+    position: absolute;
+    margin-top: -45%;
+    width: 25%;
+    margin-left: 35%;
+    height: 350px;
+    background-color: #FFF398;
+  
+}
+.note3 {
+    transform: rotate(2deg);
+    position: absolute;
+    margin-top: -45%;
+    width: 25%;
+    margin-left: 65%;
+    height: 350px;
+    background-color: #FFF398;
+  
+}
+.bottom-selector {
+    margin-top: -5%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.button1 {
+    margin-right: 3%;
+    z-index: 1; 
+    margin-top: -10%;
+    background-color: white; 
+    border-radius: 30px;
+    width: 10%; 
+    height: 120px;
+}
+.button2 {
+    margin-right: 3%;
+    z-index: 1; 
+    margin-top: -10%;
+    background-color: white; 
+    border-radius: 30px;
+    width: 10%; 
+    height: 120px;
+}
+.button3 {
+    margin-right: 3%;
+    z-index: 1; 
+    margin-top: -10%;
+    background-color: white; 
+    border-radius: 30px;
+    width: 10%; 
+    height: 120px;
+}
+.button4 {
+    margin-right: 3%;
+    z-index: 1; 
+    margin-top: -10%;
+    background-color: white; 
+    border-radius: 30px;
+    width: 10%; 
+    height: 120px;
+}

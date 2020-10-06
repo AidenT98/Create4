@@ -18,7 +18,23 @@ font-size: 40px;
 .person > h1, .person > h3 {
     margin-left: 3%;
 }
+#note-section {
+    display: flex;
+    flex-direction: row;
+  
+ 
+}
 
+
+.note-add {
+    margin-top: 5%;
+ 
+    background-color: #FFF398;
+    width: 25%; 
+    margin-left: 5%;
+  
+    height: 300px;
+}
 #secound > #first-section {
     overflow: auto;
     position: fixed;
@@ -29,7 +45,7 @@ font-size: 40px;
     margin-top: -1.5%;
 }
 #secound > #secound-section {
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
     background-color: #00B269;
     width: 100%;

@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+     
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+<script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="data.json"></script>
+    <link rel="icon" 
+    type="image/png" 
+    href="favicon.png">
+   
+    <title> no title -- prototype</title>
+</head>
+
+<body>
+       
+   
+    <div id="first-section">
+     
+    </div>
+    <div id="secound-section">
+   
+    </div>
+
+    <div id="note-template">
+        
+    
+        
+       
+    </div>
+    
+            <aside id="note-adder-1">
+                    Make A Call
+                    <div class="callers">
+                                <div class="person"> <a href="callto:0421506246"><h2>Julia (Daughter)</a></h2></div> 
+                        <div class="person"><h2><a href="callto:0421506246">Keith (Grandson)</a></h2></div>
+                    </div>
+                       <div class="callers">
+                            <div class="person"> <a href="callto:0421506246"><h2>Jen (Cleaner)</h2></a> </div>
+                            <div class="person"> <a href="callto:0421506246"><h2>Dan (Carer)</h2></a> </div>
+                        
+                    </div>
+                    <div id="buttons">
+                       
+        
+                    </div>
+                </aside>
+                <aside id="note-adder-3">
+                        <video id="player" controls autoplay></video>
+                        <canvas id="canvas" width=320 height=240></canvas>
+                        <button id="capture">Take Picture </button>
+                        <script>
+                         const player = document.getElementById('player');
+          const canvas = document.getElementById('canvas');
+          const context = canvas.getContext('2d');
+          const captureButton = document.getElementById('capture');
+        
+          const constraints = {
+            video: true,
+          };
+        
+          captureButton.addEventListener('click', () => {
+            // Draw the video frame to the canvas.
+            context.drawImage(player, 0, 0, canvas.width, canvas.height);
+          });
+        
+          // Attach the video stream to the video element and autoplay.
+          navigator.mediaDevices.getUserMedia(constraints)
+            .then((stream) => {
+              player.srcObject = stream;
+            });
+                        </script>
+                        
+                      
+                        <input type="file" accept="image/*" capture>
+                      
+                    <div id="buttons">
+                            Send To: 
+                            <div class="circle"> J </div>
+                            <div class="circle"> K </div>
+                            <div class="circle"> S </div>
+                            <div class="circle"> L </div>
+        
+        
+                    </div>
+                </aside>
+                <aside id="note-adder-2">
+                    <form id="note-form">
+                        <div id="person-select">
+                            Person:
+                            <input type="radio" id="name" value="Jen"> Jen </button>
+                            <input type="radio" id="name" value="Keith"> Keith </button>
+                            <input type="radio" id="name" value="Keither"> Sam </button>
+                            <input type="radio" id="name" value="Keither"> Lenord </button>
+                        </div>
+                        <div id="text-input">
+                            Note:
+                            <aside id="textarea-note">
+                        <textarea id="message" >
+            
+                        </textarea>
+                    </aside>
+                        </div>
+                        <div id="buttons">
+                                <i style="font-size: 50px" class="fas fa-microphone" ></i>
+                                <input type="radio" id="jv"> Just Visiting </input>
+                              
+                               
+                        </div>
+                    </aside>
+                    <button type="submit" id="submit"><i style="font-size: 50px" class="fas fa-plus"></i></button> 
+                </form>
+                
+    </div>
+    
+ <div id="popup-container"> 
+            </div>
+
+    <div class="bottom-selector">
+        <div class="button1">
+                <i class="fas fa-plus" style="font-size: 90px; color: green; text-align: center; margin-left: 30px; margin-top: 15px"></i>
+            
+
+        </div>
+        <div class="button2">
+                <i class="fas fa-camera" style="font-size: 90px; color: green; text-align: center; margin-left: 30px; margin-top: 15px"></i>
+        </div>
+        <div class="button3">
+                <i class="fas fa-phone" style="font-size: 90px; color: green; text-align: center; margin-left: 30px; margin-top: 15px"></i>
+        </div>
+        <div class="button4">
+                <i class="fas fa-exclamation" style="font-size: 90px; color: darkred; text-align: center; margin-left: 50px; margin-top: 15px"></i>
+        </div>
+        <div class="button5">
+            Clear Inputs
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+</body>
+</html>

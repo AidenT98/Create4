@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+     
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+<script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="data.json"></script>
+    <link rel="icon" 
+    type="image/png" 
+    href="favicon.png">
+   
+    <title> no title -- prototype</title>
+</head>
+
+<body>
+                <div id="side-bar-2">
+                                <img onclick="window.location='carer-home.html';" width="50px" src="Screen Shot 2020-10-20 at 2.13.54 pm.png" alt="Choose a Nurse">
+                                <img onclick="window.location='family_member_index.html';" width="50px" src="Screen Shot 2020-10-20 at 2.13.29 pm.png" alt="Choose a Nurse">
+                                <img onclick="window.location='resident-index.html';" width="50px" src="Screen Shot 2020-10-20 at 2.13.42 pm.png" alt="Choose a Nurse">
+                                    <div class="add">
+                                           
+                                            <i style="font-size: 50px; color: white;" class="fas fa-plus-circle" ></i>
+                    
+                                    </div>
+                                    <div class="settings">
+                                            <i onclick="window.location='settings.html';" style="font-size: 50px; color: white;" class="fas fa-cog"></i>
+                                          
+                                        </div>
+                                       
+                                    </div>
+   
+    <div id="first-section">
+             
+    </div>
+    <div id="secound-section">
+   
+    </div>
+
+    <div id="note-template">
+        
+   
+        
+       
+    </div>
+    
+            <aside id="note-adder-1">
+                    Make A Call
+                    <div class="callers">
+                                <div class="person"> <a href="callto:0421506246"><h2>Julia (Daughter)</a></h2></div> 
+                        <div class="person"><h2><a href="callto:0421506246">Keith (Grandson)</a></h2></div>
+                    </div>
+                       <div class="callers">
+                            <div class="person"> <a href="callto:0421506246"><h2>Jen (Cleaner)</h2></a> </div>
+                            <div class="person"> <a href="callto:0421506246"><h2>Dan (Carer)</h2></a> </div>
+                        
+                    </div>
+                    <div id="buttons">
+                       
+        
+                    </div>
+                </aside>
+                <aside id="note-adder-4">
+                        You want to dial the emergency services for Lenord. 
+                        Are you sure: 
+                        <button class="yes-no"> Yes </button>
+                        <button class="yes-no"> No </button>
+                </aside>
+                <aside id="note-adder-3">
+                        <!-- REFERENCE: https://developers.google.com/web/fundamentals/media/capturing-images-->
+                        <video id="player" controls autoplay></video>
+                        <canvas id="canvas" width=320 height=240></canvas>
+                        <button id="capture">Take Picture </button>
+                        <script>
+                                
+                         const player = document.getElementById('player');
+          const canvas = document.getElementById('canvas');
+          const context = canvas.getContext('2d');
+          const captureButton = document.getElementById('capture');
+        
+          const constraints = {
+            video: true,
+          };
+        
+          captureButton.addEventListener('click', () => {
+            // Draw the video frame to the canvas.
+            context.drawImage(player, 0, 0, canvas.width, canvas.height);
+          });
+        
+          // Attach the video stream to the video element and autoplay.
+          navigator.mediaDevices.getUserMedia(constraints)
+            .then((stream) => {
+              player.srcObject = stream;
+            });
+                        </script>
+                        
+                      
+                        <input type="file" accept="image/*" capture>
+                      
+                    <div id="buttons">
+                            Send To: 
+                            <div class="circle"> J </div>
+                            <div class="circle"> K </div>
+                            <div class="circle"> S </div>
+                            <div class="circle"> L </div>
+        
+        
+                    </div>
+                </aside>
+                <aside id="note-adder-2">
+                    <div id="note-input-form">
+                        <form >
+                            From: <br>
+                                <input type="radio" id="input" name="gender" value="Jen">
+                                <label for="male">Jen</label><br>
+                                <input type="radio" id="input" name="gender" value="Keith">
+                                <label for="female">Keith</label><br>
+                                <input type="radio" id="input" name="gender" value="Sam">
+                                <label for="other">Sam</label>
+                                <input type="radio" id="input" name="gender" value="Lenord">
+                                <label for="other">Lenord</label>
+                                <textarea id="text" name="text" width="300px"></textarea> 
+                                <fieldset>
+                                        <button id="add-note-click" type="submit">Add Note </button>
+                                    </fieldset>
+                              </form>
+                            </div>
+                  </aside>
+                
+    </div>
+    
+ <div id="popup-container"> 
+            </div>
+
+    <div class="bottom-selector">
+        <div class="button1">
+                <i class="fas fa-plus" style="font-size: 90px; color: green; text-align: center; margin-left: 30px; margin-top: 15px"></i>
+            
+
+        </div>
+        <div class="button2">
+                <i class="fas fa-camera" style="font-size: 90px; color: green; text-align: center; margin-left: 30px; margin-top: 15px"></i>
+        </div>
+        <div class="button3">
+                <i class="fas fa-phone" style="font-size: 90px; color: green; text-align: center; margin-left: 30px; margin-top: 15px"></i>
+        </div>
+        <div class="button4">
+                <i class="fas fa-exclamation" style="font-size: 90px; color: darkred; text-align: center; margin-left: 50px; margin-top: 15px"></i>
+        </div>
+        <div class="button5">
+            Clear Inputs
+        </div>
+        
+
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+</body>
+</html>

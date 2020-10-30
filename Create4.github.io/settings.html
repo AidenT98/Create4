@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+     
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+<script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="data.json"></script>
+    <link rel="icon" 
+    type="image/png" 
+    href="favicon.png">
+   
+    <title> no title -- prototype</title>
+</head>
+
+<body >
+    <section id="settings-flex">
+
+
+       <div id="1">
+          <h1>Account Settings</h1> 
+          Name: 
+            <input>
+            <br>
+           Email: 
+            <input>
+            <br>
+            Password: 
+            <input>
+            <br>
+           Occupation: 
+            <input>
+            <br>
+            <button> Update </button>
+       </div>
+       <div id="2">
+            <h1>Notifications</h1> 
+            <!-- CODE UTILISED FROM: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rangeslider-->
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        12am    
+        <br> 
+        <br> 
+        Set your notification hours to only recieve updates from your residents 
+        in hours that work for you.
+            
+    </div>
+    <div id="3">
+            <h1>Emergency Redict</h1> 
+            <input type="radio"> Keith
+            <input type="radio"> Jen 
+            <input type="radio"> Dan
+            <input type="radio"> Julia
+            <input type="radio"> Bob
+
+    </div>
+</section>
+<h1> This section is still under production, for other setting such as High Contrast, and Audio Descrptions see residents pages </h1>
+<div id="side-bar-2" style="margin-top: 30%;">
+        <img onclick="window.location='carer-home.html';" width="50px" src="Screen Shot 2020-10-20 at 2.13.54 pm.png" alt="Choose a Nurse">
+        <img onclick="window.location='family_member_index.html';" width="50px" src="Screen Shot 2020-10-20 at 2.13.29 pm.png" alt="Choose a Nurse">
+        <img onclick="window.location='resident-index.html';" width="50px" src="Screen Shot 2020-10-20 at 2.13.42 pm.png" alt="Choose a Nurse">
+            <div class="add">
+                   
+                    <i style="font-size: 50px; color: white;" class="fas fa-plus-circle" ></i>
+
+            </div>
+            <div class="settings">
+                    <i style="font-size: 50px; color: white;" class="fas fa-cog"></i>
+                  
+                </div>
+               
+            </div>
+    <div class="settings">
+            <i onclick="window.location='settings.html';" style="font-size: 50px; color: white;" class="fas fa-cog"></i>
+          
+        </div>
+       
+    </div>
+
+</body>
+  
+   </html>
